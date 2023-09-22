@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="background_color_entries">
+        <item>Black</item>
+        <item>Red</item>
+        <item>Blue</item>
+        <item>Green</item>
+        <item>Default (Light Gray)</item>
+    </string-array>
+
+    <string-array name="background_color_values">
+        <item>#FF000000</item>
+        <item>#FFFF0000</item>
+        <item>#FF0000FF</item>
+        <item>#FF00FF00</item>
+        <item>#CCCCCC</item>
+    </string-array>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory>
+
+        <EditTextPreference
+            android:defaultValue="0"
+            android:inputType="number"
+            android:key="number"
+            android:maxLines="2"
+            android:title="Saved number: "
+            android:summary="Type number"
+            app:useSimpleSummaryProvider="true"/>
+
+        <ListPreference
+            android:defaultValue="#CCCCCC"
+            android:entries="@array/background_color_entries"
+            android:entryValues="@array/background_color_values"
+            android:key="background_color"
+            android:title="Which colour do you want to save?"
+            app:useSimpleSummaryProvider="true"/>
+
+    </PreferenceCategory>
+</PreferenceScreen>

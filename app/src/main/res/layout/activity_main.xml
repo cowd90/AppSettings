@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white"
+    android:id="@+id/relative_layout">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_background"
+        android:layout_width="360dp"
+        android:layout_height="500dp"
+        android:layout_marginTop="50dp"
+        android:background="#CCCCCC"
+        android:layout_below="@id/toolbar"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
