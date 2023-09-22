@@ -15,8 +15,11 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import com.google.android.material.button.MaterialButton;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -72,5 +75,6 @@ public class MainActivity extends AppCompatActivity {
 
         textNumber.setText(number);
         background.setBackgroundColor(Color.parseColor(color));
+
     }
 }

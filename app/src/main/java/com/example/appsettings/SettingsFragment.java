@@ -16,18 +16,5 @@ public class SettingsFragment extends PreferenceFragmentCompat {
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         setPreferencesFromResource(R.xml.root_preferences, rootKey);
-
-        EditTextPreference textPref = findPreference("number");
-        ListPreference colorPref = findPreference("background_color");
-
-        textPref.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
-            @Override
-            public boolean onPreferenceChange(@NonNull Preference preference, Object newValue) {
-                String text = newValue.toString();
-                
-                return true;
-            }
-        });
-
     }
 }
